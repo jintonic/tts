@@ -1,0 +1,30 @@
+model:
+  name: 0.3B
+  tokenizer: custom
+  tokenizer_path: vocab.txt
+  backbone: DiT
+  arch:
+    dim: 1024
+    depth: 22
+    heads: 16
+    ff_mult: 2
+    text_dim: 512
+    text_mask_padding: True
+    qk_norm: null
+    conv_layers: 4
+    pe_attn_head: null
+    attn_mask_enabled: False
+    checkpoint_activations: False
+    logit_softcapping: null
+    post_norm: False
+    norm_type: rmsnorm
+  mel_spec:
+    target_sample_rate: 16000
+    n_mel_channels: 80
+    hop_length: 256
+    win_length: 1024
+    n_fft: 1024
+    mel_spec_type: sbhifigan16k
+  vocoder:
+    is_local: True
+    local_path: null
