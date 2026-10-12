@@ -42,7 +42,7 @@ brew install python@3.12
 python3.12 -m venv python/3.12
 source python/3.12/bin/activate
 git clone https://github.com/jintonic/tts
-cd tts/raon
+cd tts/Raon-OpenTTS
 pip install -r requirements.txt
 # change text in gen.txt
 ./infer.py
